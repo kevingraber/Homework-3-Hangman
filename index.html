@@ -7,7 +7,7 @@
 	<!-- My CSS -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<!-- Google Fonts -->
-	<link href='https://fonts.googleapis.com/css?family=Creepster|Griffy' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Bangers|Creepster' rel='stylesheet' type='text/css'>
 	<!-- jQuery Link -->
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 </head>
@@ -28,41 +28,72 @@
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<h2 class="text-center">Press any key to begin!</h2>
+			<p class="text-center">(Save Courage the Cowardly Dog!)</p>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
-			<h2 id="answerArea" class="text-center"></h2>
+			<h3 id="answerArea" class="text-center"></h3>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
-			<h2 id="lastWord">Last Word: </h2>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
+		<div class="col-md-5 col-md-offset-2">
 			<h2 id="guessUpdate">Guessed Letters: </h2>
 		</div>
+		<div class="col-md-4">
+			<h2 id="lastWord">Last Word: </h2>
+		</div>
+<!-- 		<div class="col-md-6 col-md-offset-1">
+			<h2 id="lastWord">Last Word: </h2>
+		</div> -->
+<!-- 		<div class="col-md-2">
+			<h2 id="wins">Wins: 0</h2>
+		</div>
+		<div class="col-md-2">
+			<h2 id="losses">Losses: 0</h2>
+		</div> -->
 	</div>
 	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
+		<div class="col-md-5 col-md-offset-2">
 			<h2 id="remainingGuesses">Remaining Guesses: </h2>
 		</div>
+		<div class="col-md-2">
+			<h2 id="wins">Wins: 0</h2>
+		</div>
+		<div class="col-md-2">
+			<h2 id="losses">Losses: 0</h2>
+		</div>
+<!-- 		<div class="col-md-4">
+			<h2 id="lastWord">Last Word: </h2>
+		</div> -->
+<!-- 		<div class="col-md-6 col-md-offset-1">
+			<h2 id="guessUpdate">Guessed Letters: </h2>
+		</div> -->
+<!-- 		<div class="col-md-4">
+			<h2 id="remainingGuesses">Remaining Guesses: </h2>
+		</div> -->
+<!-- 	<div class="col-md-2">
+			<h2 id="losses">Losses: 0</h2>
+		</div> -->
 	</div>
+<!-- 	<div class="row">
+		<div class="col-md-4 col-md-offset-1">
+			<h2 id="remainingGuesses">Remaining Guesses: </h2>
+		</div>
+	</div> -->
 	<div class="row">
-		<div class="col-md-4 col-md-offset-2">
+<!-- 		<div class="col-md-4 col-md-offset-2">
 			<h2 id="wins" class="text-center">Wins: 0</h2>
-		</div>
-		<div class="col-md-4">
+		</div> -->
+<!-- 		<div class="col-md-4">
 			<h2 id="losses" class="text-center">Losses: 0</h2>
-		</div>
+		</div> -->
 	</div>
 	<div class="row">
 		<div class="col-md-2" id="zombie">
 			<img id="zomb" src="zombie.png">
 		</div>
-		<div class="col-md-2 col-md-offset-6">
+		<div class="col-md-2 col-md-offset-8">
 			<img id="courage" src="courage.png">
 		</div>
 	</div>
@@ -80,7 +111,7 @@
 // });
 
 function zombieMove() {
-	$("#zombie").animate({left: "+=75px"});
+	$("#zombie").animate({left: "+=8.5%"});
 }
 
 function zombieReset() {
@@ -88,7 +119,7 @@ function zombieReset() {
 }
 
 // Defining variables 
-var wordList = ["brains", "zombie", "undead", "skeleton", "haunted", "frankenstein", "mummy", "dracula", "transylvania", "werewolf", "lycanthrope", "graveyard", "ghoul", "swamp", "voodoo", "monster", "stake"]
+var wordList = ["brains", "zombie", "undead", "skeleton", "haunted", "frankenstein", "mummy", "dracula", "transylvania", "werewolf", "lycanthrope", "graveyard", "ghoul", "swamp", "voodoo", "monster", "mausoleum", "tomb", "reanimate", "vampire", "tombstone"]
 var answer = wordList[Math.floor(Math.random() * wordList.length)];
 var lettersinanswer = answer.split("");  
 var numblanks = lettersinanswer.length;

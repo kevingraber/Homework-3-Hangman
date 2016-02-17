@@ -1,13 +1,13 @@
 h1 {
 	font-family: 'Creepster', cursive;
-	font-size: 72px;
+	font-size: 100px;
 	color:orange;
-	margin-top:10px;
+	margin-top:0px;
 } 
 
 h2 {
-	font-family: 'Creepster', cursive;
-	font-size:40px;
+	font-family: 'Bangers', cursive;
+	font-size:35px;
 	color:orange;
 	margin-top:10px;
 }
@@ -17,12 +17,25 @@ body {
 	background-position: center;
 }
 
+h3 {
+	color:orange;
+	font-size:60px;
+	font-family: 'Bangers', cursive;
+	margin-bottom:30px;
+}
+
+p {
+	color:orange;
+	font-family: 'Bangers', cursive;
+	font-size:20px;
+}
+
 #zomb {
-	width:200px;
+	width:190px;
 }
 
 
 #courage {
-	padding-top:30px;
-	width:210px;
+	padding-top:50px;
+	width:190px;
 }
