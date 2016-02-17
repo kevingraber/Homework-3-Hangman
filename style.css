@@ -1,0 +1,28 @@
+h1 {
+	font-family: 'Creepster', cursive;
+	font-size: 72px;
+	color:orange;
+	margin-top:10px;
+} 
+
+h2 {
+	font-family: 'Creepster', cursive;
+	font-size:40px;
+	color:orange;
+	margin-top:10px;
+}
+
+body {
+	background-image:url("graveyard.jpg");
+	background-position: center;
+}
+
+#zomb {
+	width:200px;
+}
+
+
+#courage {
+	padding-top:30px;
+	width:210px;
+}
